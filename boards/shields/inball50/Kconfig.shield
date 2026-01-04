@@ -1,0 +1,4 @@
+config SHIELD_INBALL50_LEFT
+    def_bool $(shields_list_contains,inball50_left)
+config SHIELD_INBALL50_RIGHT
+    def_bool $(shields_list_contains,inball50_right)

@@ -1,0 +1,14 @@
+
+if SHIELD_INBALL50_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "inball50"
+
+endif
+
+if SHIELD_INBALL50_LEFT || SHIELD_INBALL50_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif

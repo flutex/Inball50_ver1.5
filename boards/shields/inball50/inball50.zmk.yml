@@ -1,0 +1,14 @@
+
+file_format: "1"
+id: inball50
+name: inball50
+type: shield
+features:
+  - keys
+  - studio
+outputs:
+  - usb
+  - ble
+siblings:
+  - inball50_left
+  - inball50_right
