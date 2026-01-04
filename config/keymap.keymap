@@ -1,44 +1,55 @@
-
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/pointing.h>
 
 / {
     keymap {
         compatible = "zmk,keymap";
 
         layer_0 {
-            bindings =<
-                &none &none &none &none &none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none &none &none &none &none &none &none
+            bindings = <
+&kp ESC    &kp Q     &kp W     &kp E  &kp R           &kp T                               &kp Y        &kp U             &kp I      &kp O     &kp P     &none
+&kp TAB    &kp A     &kp S     &kp D  &kp F           &kp G                 &kp LEFT_WIN  &kp H        &kp J             &kp K      &kp L     &kp BSPC  &none
+&kp LSHFT  &kp Z     &kp X     &kp C  &kp V           &kp B                 &mo 3         &kp N        &kp M             &kp COMMA  &kp DOT   &kp UP    &kp RIGHT
+&kp LCTRL  &kp LGUI  &kp LALT         &kp LANGUAGE_2  &lt 1 SPACE  &kp TAB  &kp LSHFT     &lt 2 ENTER  &lt 4 LANGUAGE_1             &kp LEFT  &kp DOWN  &kp MINUS
             >;
         };
 
         layer_1 {
-            bindings =<
-                &none &none &none &none &none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none &none &none &none &none &none &none
+            bindings = <
+&none  &none  &none  &none  &none  &none                &kp BSLH  &kp N7  &kp N8  &kp N9  &kp LS(DQT)  &none
+&none  &none  &none  &none  &none  &none         &none  &kp LBKT  &kp N4  &kp N5  &kp N6  &kp BSPC     &none
+&none  &none  &none  &none  &none  &none         &none  &kp RBKT  &kp N1  &kp N2  &kp N3  &none        &none
+&none  &none  &none         &none  &none  &none  &none  &kp N0    &none           &none   &none        &none
             >;
         };
 
         layer_2 {
-            bindings =<
-                &none &none &none &none &none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none &none &none &none &none &none &none
+            bindings = <
+&none  &kp LC(Q)  &kp LC(W)  &kp LC(E)  &kp LC(R)  &kp RC(T)                            &kp LS(LC(TAB))  &kp LC(TAB)  &mkp MCLK  &mkp MB4   &mkp MB5  &none
+&none  &kp LC(A)  &kp LC(S)  &kp LC(D)  &kp LC(F)  &kp LC(G)         &kp C_VOLUME_UP    &kp PAGE_UP      &mkp LCLK    &kp UP     &mkp RCLK  &kp DEL   &none
+&none  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(B)         &kp C_VOLUME_DOWN  &kp PAGE_DOWN    &kp LEFT     &kp DOWN   &kp RIGHT  &none     &none
+&none  &none      &none                 &none      &none      &none  &none              &none            &none                   &none      &none     &none
             >;
         };
 
         layer_3 {
-            bindings =<
-                &none &none &none &none &none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none &none &none &none &none &none &none
+            bindings = <
+&none  &none  &none  &none  &none  &none                &out OUT_TOG  &bt BT_SEL 0  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none         &none  &none         &none         &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none         &none  &none         &none         &none  &none  &none  &none
+&none  &none  &none         &none  &none  &none  &none  &none         &none                &none  &none  &none
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans
             >;
         };
     };
