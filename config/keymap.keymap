@@ -5,6 +5,20 @@
 #include <dt-bindings/zmk/pointing.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        left_click {
+            bindings = <&mkp LCLK>;
+            key-positions = <20 21>;
+        };
+
+        right_click {
+            bindings = <&mkp RCLK>;
+            key-positions = <22 21>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
