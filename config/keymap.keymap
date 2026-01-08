@@ -69,6 +69,24 @@
             key-positions = <18 31>;
             layers = <1>;
         };
+
+        FUNCTION10 {
+            bindings = <&kp F10>;
+            key-positions = <33 34>;
+            layers = <4>;
+        };
+
+        FUNCTION11 {
+            bindings = <&kp F11>;
+            key-positions = <34 35>;
+            layers = <4>;
+        };
+
+        FUNCTION12 {
+            bindings = <&kp F12>;
+            key-positions = <20 21>;
+            layers = <4>;
+        };
     };
 
     keymap {
